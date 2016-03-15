@@ -24,7 +24,7 @@ r0gger/mistserver
 `-p 1935` - RTMP  
 `-p 554` - RTSP   
 `-p 8080` - HTTP / HLS   
-`-v /etc/localhost` - for timesync - *optional*   
+`-v /etc/localhost:ro` - for timesync (read-only) - *optional*   
 `-v /config` - config and log files  
 `-v /media` - video and audio files      
 
@@ -36,7 +36,7 @@ Build Free version
 -----------
 1. Build: `docker build -t mistserver .`   
 2. Run container:    
-`docker run -i -t -p 1935:1935 -p 4242:4242 -p 554:554 -p 8080:8080 -v /my-folder:/config -v /my-folder/video:/media --name mistserver mistserver:latest /sbin/my_init`   
+`docker run -i -t -p 1935:1935 -p 4242:4242 -p 554:554 -p 8080:8080 -v /my-folder:/config -v /my-folder/video:/media /etc/localtime:/etc/localtime:ro --name mistserver mistserver:latest /sbin/my_init`   
 3. Login to http://mydomain.tld:4242 and enter a username/password.   
 4. Click on "Enable protocols".
 5. Enter a "Human readable name" and set a thick to "Force JSON file save".   
