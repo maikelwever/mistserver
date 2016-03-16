@@ -39,7 +39,8 @@ Build Free version
 
 Build Pro version
 -----------
-`docker build --build-arg MISTSERVER=http://releases.mistserver.org/dl/**/***UNIQUE-ID***/mistserver_***.tar.gz -t mistserver-pro .`
+1. `git clone https://github.com/R0GGER/mistserver.git mistserver-pro`
+2. `docker build --build-arg MISTSERVER=http://releases.mistserver.org/dl/**/***UNIQUE-ID***/mistserver_***.tar.gz -t mistserver-pro .`
 
 Setup live streaming with RTMP
 -----------
