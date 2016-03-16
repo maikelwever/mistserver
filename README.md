@@ -28,10 +28,6 @@ r0gger/mistserver
 `-v /config` - config and log files  
 `-v /media` - video and audio files      
 
-Build Pro version
------------
-`docker build --build-arg MISTSERVER=http://releases.mistserver.org/dl/**/***UNIQUE-ID***/mistserver_***.tar.gz -t mistserver-pro .`
-
 Build Free version
 -----------
 1. Build: `docker build -t mistserver .`   
@@ -40,6 +36,10 @@ Build Free version
 3. Login to http://mydomain.tld:4242 and enter a username/password.   
 4. Click on "Enable protocols".
 5. Enter a "Human readable name" and set a thick to "Force JSON file save".   
+
+Build Pro version
+-----------
+`docker build --build-arg MISTSERVER=http://releases.mistserver.org/dl/**/***UNIQUE-ID***/mistserver_***.tar.gz -t mistserver-pro .`
 
 Setup live streaming with RTMP
 -----------
