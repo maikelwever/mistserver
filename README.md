@@ -40,7 +40,7 @@ Build & run Free version
 Build Pro version
 -----------
 1. `git clone https://github.com/R0GGER/mistserver.git mistserver-pro`
-2. `nano Dockerfile` (CRTL + X to save and exit).
+2. `nano Dockerfile` (CTRL + X to save and exit).
 3. `docker build -t mistserver-pro .`
 
 Setup live streaming with RTMP
