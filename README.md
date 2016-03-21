@@ -28,7 +28,7 @@ r0gger/mistserver
 `-v /config` - config and log files  
 `-v /media` - video and audio files      
 
-Build Free version
+Build & run Free version
 -----------
 1. Build: `docker build -t mistserver .`   
 2. Run container:    
