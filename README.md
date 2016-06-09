@@ -26,7 +26,9 @@ r0gger/mistserver
 `-p 8080` - HTTP / HLS   
 `-v /etc/localhost:ro` - for timesync (read-only) - *optional*   
 `-v /config` - config and log files  
-`-v /media` - video and audio files      
+`-v /media` - video and audio files 
+`-e PGID` for for GroupID
+`-e PUID` for for UserID
 
 Build & run Free version
 -----------
